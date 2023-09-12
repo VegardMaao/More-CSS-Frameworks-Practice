@@ -1,11 +1,19 @@
-.navbar-brand {
-  color: white;
-  background-color: black;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     background-color: map-get($map: $colors, $key: primary);
+ *   |                                     ^^^^^^^
+ *   '
+ *   src\scss\components\_navbar.scss 2:37  @use
+ *   src\scss\components\_index.scss 1:1    @use
+ *   src\scss\scss.scss 2:1                 root stylesheet */
 
-body {
-  background-color: #451952;
-  color: #F39F5A;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: map-get($map: $colors, $key: primary);\d\a   \2502                                      ^^^^^^^\a   \2575 \a   src\\scss\\components\\_navbar.scss 2:37  @use\a   src\\scss\\components\\_index.scss 1:1    @use\a   src\\scss\\scss.scss 2:1                 root stylesheet";
 }
-
-/*# sourceMappingURL=scss.css.map */
