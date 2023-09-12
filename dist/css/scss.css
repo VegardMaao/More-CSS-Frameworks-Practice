@@ -1,6 +1,11 @@
-body, header, nav {
-  background-color: black;
+.navbar-brand {
   color: white;
+  background-color: black;
+}
+
+body {
+  background-color: #451952;
+  color: #F39F5A;
 }
 
 /*# sourceMappingURL=scss.css.map */
