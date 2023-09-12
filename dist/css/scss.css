@@ -2,9 +2,22 @@ nav {
   background-color: #F39F5A;
 }
 
+.btn {
+  color: #AE445A;
+  border: 2px solid #AE445A;
+}
+.btn:hover {
+  color: #F39F5A;
+  border: 2px solid #F39F5A;
+}
+
 body {
   background-color: #451952;
   color: #F39F5A;
+}
+
+.increase-margin-1 {
+  margin: 2rem auto;
 }
 
 /*# sourceMappingURL=scss.css.map */

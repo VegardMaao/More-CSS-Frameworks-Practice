@@ -1,0 +1,11 @@
+@use "../utilities/variables" as variables;
+
+.btn{
+    color: map-get($map: variables.$colors, $key: tetriary);
+    border: 2px solid map-get($map: variables.$colors, $key: tetriary);
+
+    &:hover{
+        color: map-get($map: variables.$colors, $key: quaternary);
+        border: 2px solid map-get($map: variables.$colors, $key: quaternary);
+    }
+}
